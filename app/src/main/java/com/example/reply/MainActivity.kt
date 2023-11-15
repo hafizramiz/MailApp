@@ -8,6 +8,9 @@ import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSiz
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import com.example.reply.ui.HomeScreen
 import com.example.reply.ui.theme.ReplyTheme
+import com.example.reply.ui.utils.components.DetailAppBar
+import com.example.reply.ui.utils.components.Profile
+import com.example.reply.ui.utils.components.SearchBar
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
@@ -17,7 +20,7 @@ class MainActivity : ComponentActivity() {
             WindowWidthSizeClass
             ReplyTheme {
                 Surface {
-                    HomeScreen()
+                   DetailAppBar()
                 }
             }
         }
